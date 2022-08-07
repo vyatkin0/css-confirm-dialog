@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dialog</title>
+    <link rel="stylesheet" href="dialog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">
+            <img src="img/logo1.svg" alt="">
+            <img src="img/logo2.svg" alt="">
+        </div>
+        <p>I had once a mind to have gone to <span class="highlighted"> the Brazils</span> and have settled
+            myself there, for I was, as it were, naturalised to the place; but
+            I had some little scruple in my mind about religion, which
+            insensibly drew me back. 
+        <div class="usage">
+            <div class="step">
+                <img src="img/1.svg" alt="Step 1">
+                Step 1
+            </div>
+            <div class="step">
+                <img src="img/2.svg" alt="Step 2">
+                Step 2
+            </div>
+            <div class="step">
+                <img src="img/3.svg" alt="Step 3">
+                Step 3
+            </div>
+            <div class="step">
+                <img src="img/4.svg" alt="Step 4">
+                Step 4
+            </div>
+        </div>
+        <p>Having thus settled my affairs, sold my cargo, and turned all my
+            effects into good bills of exchange, my next difficulty was which
+            way to go to England: I had been accustomed enough to the sea, and
+            yet I had a strange aversion to go to England by the sea at that
+            time, and yet I could give no reason for it, yet the difficulty
+            increased upon me so much, that though I had once shipped my
+            baggage in order to go, yet I altered my mind, and that not once
+            but two or three times.</p>
+        <label>
+            <input type="checkbox" id="check">
+            <span></span>
+            By clicking "<b>OK</b>":
+        </label>
+        <ul>
+            <li>It is true I had been <a href="#">very unfortunate</a> by sea, and this might be
+                one of the reasons</li>
+            <li>But let no man slight the strong impulses of
+                his <a href="#">own thoughts</a> in cases of such moment</li>
+        </ul>
+        <div class="actions">
+            <button onclick="onClickCancel()"><span>Cancel</span><br /><span>Cancel description<span></button>
+            <button id="btn-ok" onclick="onClickOk()"><span>OK</span><br />
+                <span>OK description</span></button>
+        </div>
+    </div>
+    <script>
+        function onClickOk(e) {
+            alert('OK ' + document.getElementById('check').checked);
+        }
+
+        function onClickCancel(e) {
+            alert('Cancel ' + document.getElementById('check').checked);
+        }
+    </script>
+</body>
+
+</html>
